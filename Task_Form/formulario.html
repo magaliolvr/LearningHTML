@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Formulario de candidatura</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <a href="../Index.html">Ir para Indice</a>
 
-    <h1>Formulário de candidatura</h1>
-    <form method="post">
-      <label for="nome">Nome :</label>
-      <input type="text" id="nome" name="pc-nome" size="50" placeholder="Insira o nome aqui" value="" required />
-      <label for="sobrenome">Sobrenome :</label>
-      <input type="text" id="sobrenome" name="pc-apelido" size="50" placeholder="Insira seu sobrenome aqui" value="" required />
-      <br /><br />
-      <label for="telefone">Telefone: </label>
-      <input type="tel" id="telefone" name="pc-telefone" placeholder="insira seu telefone" required />
-      <br /><br />
-      <label for="email">E-mail: </label>
-      <input type="email" id="email" name="pc-email" size="50" placeholder="Insira o email aqui" value="" required />
-      <br /><br />
-      <label for="website">Website/Linkedin: </label>
-      <input type="url" id="website" name="pc-website" size="50" placeholder="Insira seu site" value="" />
-      <br /><br />
-      <label for="upload">Curriculum Vitae: </label>
-      <input type="file" id="upload" name="pc-upload" required />
-      <br /><br />
-      <label for="experiencia">Última empresa em que trabalhou: </label>
-      <input type="text" id="experiencia" name="pc-experiencia" size="50" placeholder="Insira o nome da empresa aqui" value="" required />
-      <br /><br />
-      <label for="dataEntrada">Data de entrada: </label>
-      <input type="date" id="dataEntrada" name="pc-date" value="2023-10-01" required />
-      <br /><br />
-      <label for="dataSaida">Data de saida: </label>
-      <input type="date" id="dataSaida" name="pc-date" value="2023-10-01" required />
-      <br /><br />
-      <label>Quantos meses teve que dar a casa: </label>
-      <input type="radio" name="pc-meses" id="um" />
-      <label for="mesesCasa">1 mês</label>
-      <input type="radio" name="pc-meses" id="dois" />
-      <label for="mesesCasa">2 meses</label>
-      <br /><br />
-      <label for="coverLetter">Escreva sua Cover Letter: </label>
-      <br />
-      <textarea id="coverLetter" name="pc-coverLetter" rows="4" cols="50" placeholder="Escreva sua Cover Letter aqui"></textarea>
-      <br /><br />
-      <label for="referencia">Onde ouviste falar de nós? </label>
-      <select id="referencia" name="pc-referencia">
-        <option value="Google">Site</option>
-        <option value="Conhecidos">Facebook</option>
-        <option value="Linkedin">Linkedin</option>
-        <option value="Facebook">Amigo</option>
-        <option value="Outro">Outro</option>
-      </select>
-      <br /><br />
-      <input type="submit" value="Enviar candidatura" />
-    </form>
-  </body>
+<head>
+  <title>Formulario de candidatura</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a href="./Index.html">Ir para Indice</a>
+
+  <h1>Formulário de candidatura</h1>
+  <form method="post">
+    <label for="nome">Nome :</label>
+    <input type="text" id="nome" name="pc-nome" size="50" placeholder="Insira o nome aqui" value="" required />
+    <label for="sobrenome">Sobrenome :</label>
+    <input type="text" id="sobrenome" name="pc-apelido" size="50" placeholder="Insira seu sobrenome aqui" value=""
+      required />
+    <br /><br />
+    <label for="telefone">Telefone: </label>
+    <input type="tel" id="telefone" name="pc-telefone" placeholder="insira seu telefone" required />
+    <br /><br />
+    <label for="email">E-mail: </label>
+    <input type="email" id="email" name="pc-email" size="50" placeholder="Insira o email aqui" value="" required />
+    <br /><br />
+    <label for="website">Website/Linkedin: </label>
+    <input type="url" id="website" name="pc-website" size="50" placeholder="Insira seu site" value="" />
+    <br /><br />
+    <label for="upload">Curriculum Vitae: </label>
+    <input type="file" id="upload" name="pc-upload" required />
+    <br /><br />
+    <label for="experiencia">Última empresa em que trabalhou: </label>
+    <input type="text" id="experiencia" name="pc-experiencia" size="50" placeholder="Insira o nome da empresa aqui"
+      value="" required />
+    <br /><br />
+    <label for="dataEntrada">Data de entrada: </label>
+    <input type="date" id="dataEntrada" name="pc-date" value="2023-10-01" required />
+    <br /><br />
+    <label for="dataSaida">Data de saida: </label>
+    <input type="date" id="dataSaida" name="pc-date" value="2023-10-01" required />
+    <br /><br />
+    <label>Quantos meses teve que dar a casa: </label>
+    <input type="radio" name="pc-meses" id="um" />
+    <label for="mesesCasa">1 mês</label>
+    <input type="radio" name="pc-meses" id="dois" />
+    <label for="mesesCasa">2 meses</label>
+    <br /><br />
+    <label for="coverLetter">Escreva sua Cover Letter: </label>
+    <br />
+    <textarea id="coverLetter" name="pc-coverLetter" rows="4" cols="50"
+      placeholder="Escreva sua Cover Letter aqui"></textarea>
+    <br /><br />
+    <label for="referencia">Onde ouviste falar de nós? </label>
+    <select id="referencia" name="pc-referencia">
+      <option value="Google">Site</option>
+      <option value="Conhecidos">Facebook</option>
+      <option value="Linkedin">Linkedin</option>
+      <option value="Facebook">Amigo</option>
+      <option value="Outro">Outro</option>
+    </select>
+    <br /><br />
+    <input type="submit" value="Enviar candidatura" />
+  </form>
+</body>
+
 </html>

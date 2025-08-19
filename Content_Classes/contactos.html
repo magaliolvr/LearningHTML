@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Contactos</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <a href="../Index.html">Ir para Indice</a>
 
-    <h1>Contactos</h1>
-    <!-- method GET, POST, PUT, PATCH, DELETE -->
-    <form method="post">
-      <label for="texto">Input de texto</label>
-      <input type="text" id="texto" name="pc-text" placeholder="Insira o texto aqui" value="Magali" />
-      <!-- Value é usado para adicionar um valor pre definido diretamente no html -->
-      <br /><br />
-      <!-- input email -->
-      <label for="email">Email</label>
-      <input type="email" id="email" name="pc-email" placeholder="Insira o email aqui" value="  " />
-      <br /><br />
-      <!-- input password -->
-      <label for="password">Password</label>
-      <input type="password" id="password" name="pc-password" placeholder="Insira a password aqui" />
+<head>
+  <title>Contactos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-      <br /><br />
-      <!-- input number -->
-      <label for="number">Número</label>
-      <input type="text" id="number" name="pc-number" placeholder="Insira o número aqui" pattern="\d{2}-[a-z]{2}-\d{2}$" required />
+<body>
+  <a href="./Index.html">Ir para Indice</a>
 
-      <br /><br />
-      <!-- input range -->
-      <label for="range">Range</label>
-      <input type="range" id="range" name="pc-range" min="0" max="10" value="50" />
-      <br /><br />
-      <!-- input date -->
-      <label for="date">Data</label>
-      <input type="date" id="date" name="pc-date" value="2023-10-01" />
+  <h1>Contactos</h1>
+  <!-- method GET, POST, PUT, PATCH, DELETE -->
+  <form method="post">
+    <label for="texto">Input de texto</label>
+    <input type="text" id="texto" name="pc-text" placeholder="Insira o texto aqui" value="Magali" />
+    <!-- Value é usado para adicionar um valor pre definido diretamente no html -->
+    <br /><br />
+    <!-- input email -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="pc-email" placeholder="Insira o email aqui" value="  " />
+    <br /><br />
+    <!-- input password -->
+    <label for="password">Password</label>
+    <input type="password" id="password" name="pc-password" placeholder="Insira a password aqui" />
 
-      <br /><br />
-      <!-- input file -->
-      <label for="file">File</label>
-      <input type="file" id="file" name="pc-file" multiple />
-      <!-- multiple serve para poder selecionar varios arquivos -->
+    <br /><br />
+    <!-- input number -->
+    <label for="number">Número</label>
+    <input type="text" id="number" name="pc-number" placeholder="Insira o número aqui" pattern="\d{2}-[a-z]{2}-\d{2}$"
+      required />
 
-      <br /><br />
+    <br /><br />
+    <!-- input range -->
+    <label for="range">Range</label>
+    <input type="range" id="range" name="pc-range" min="0" max="10" value="50" />
+    <br /><br />
+    <!-- input date -->
+    <label for="date">Data</label>
+    <input type="date" id="date" name="pc-date" value="2023-10-01" />
 
-      <!-- checkboxes -->
-      <label for="checkbox">Checkbox</label>
-      <input type="checkbox" id="checkbox" name="pc-checkbox" value="checkbox" />
-      <br />
-      <label for="checkbox2">Checkbox 2</label>
-      <input type="checkbox" id="checkbox2" name="pc-checkbox2" value="checkbox2" />
-      <br /><br />
+    <br /><br />
+    <!-- input file -->
+    <label for="file">File</label>
+    <input type="file" id="file" name="pc-file" multiple />
+    <!-- multiple serve para poder selecionar varios arquivos -->
 
-      <!-- radio buttons -->
-      <label for="sexo-masculino">Masculino</label>
-      <input type="radio" name="gender" value="masculino" id="sexo-masculino" />
-      <label for="sexo-feminino">Feminino</label>
-      <input type="radio" name="gender" value="masculino" id="sexo-feminino" checked />
+    <br /><br />
 
-      <br /><br />
-      <!-- select -->
-      <label for="pais">Country</label>
-      <select id="pais" name="pais" required multiple>
-        <option value="portugal">Portugal</option>
-        <option value="brasil" selected>Brasil</option>
-        <option value="espanha">Espanha</option>
-        <option value="franca">França</option>
-      </select>
-      <br /><br />
+    <!-- checkboxes -->
+    <label for="checkbox">Checkbox</label>
+    <input type="checkbox" id="checkbox" name="pc-checkbox" value="checkbox" />
+    <br />
+    <label for="checkbox2">Checkbox 2</label>
+    <input type="checkbox" id="checkbox2" name="pc-checkbox2" value="checkbox2" />
+    <br /><br />
 
-      <!-- textarea -->
-      <label for="mensagem">Mensagem de texto</label>
-      <textarea id="textarea" name="message" disabled></textarea>
+    <!-- radio buttons -->
+    <label for="sexo-masculino">Masculino</label>
+    <input type="radio" name="gender" value="masculino" id="sexo-masculino" />
+    <label for="sexo-feminino">Feminino</label>
+    <input type="radio" name="gender" value="masculino" id="sexo-feminino" checked />
 
-      <br /><br />
+    <br /><br />
+    <!-- select -->
+    <label for="pais">Country</label>
+    <select id="pais" name="pais" required multiple>
+      <option value="portugal">Portugal</option>
+      <option value="brasil" selected>Brasil</option>
+      <option value="espanha">Espanha</option>
+      <option value="franca">França</option>
+    </select>
+    <br /><br />
 
-      <button type="submit">Submeter</button>
-      <br /><br />
-      <input type="reset" value="Limpar" />
-    </form>
-  </body>
+    <!-- textarea -->
+    <label for="mensagem">Mensagem de texto</label>
+    <textarea id="textarea" name="message" disabled></textarea>
+
+    <br /><br />
+
+    <button type="submit">Submeter</button>
+    <br /><br />
+    <input type="reset" value="Limpar" />
+  </form>
+</body>
+
 </html>

@@ -1,113 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Formulário de candidatura</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      label {
-        font-weight: 500;
-      }
 
-      table {
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        padding: 8px 12px;
-        text-align: left;
-        border: 1px solid #ddd;
-      }
-      th {
-        background-color: #f2f2f2;
-        font-size: 24px;
-      }
-      tr:hover {
-        background-color: #f5f5f5;
-      }
-    </style>
-  </head>
-  <body>
-    <a href="../Index.html">Ir para Indice</a>
+<head>
+  <title>Formulário de candidatura</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    label {
+      font-weight: 500;
+    }
 
-    <form method="post" action="">
-      <table>
-        <thead>
-          <tr>
-            <th>Label</th>
-            <th>Input</th>
-          </tr>
-        </thead>
+    table {
+      border-collapse: collapse;
+    }
 
-        <tbody>
-          <tr>
-            <td><label for="nome">Nome :</label></td>
-            <td><input type="text" id="nome" name="pc-nome" size="50" placeholder="Insira o nome aqui" value="" required /></td>
-          </tr>
-          <tr>
-            <td><label for="sobrenome">Sobrenome :</label></td>
-            <td><input type="text" id="sobrenome" name="pc-apelido" size="50" placeholder="Insira seu sobrenome aqui" value="" required /></td>
-          </tr>
-          <tr>
-            <td><label for="telefone">Telefone: </label></td>
-            <td><input type="tel" id="telefone" name="pc-telefone" placeholder="insira seu telefone" required /></td>
-          </tr>
-          <tr>
-            <td><label for="email">E-mail: </label></td>
-            <td><input type="email" id="email" name="pc-email" size="50" placeholder="Insira o email aqui" value="" required /></td>
-          </tr>
-          <tr>
-            <td><label for="website">Website/Linkedin: </label></td>
-            <td><input type="url" id="website" name="pc-website" size="50" placeholder="Insira seu site" value="" /></td>
-          </tr>
-          <tr>
-            <td><label for="upload">Curriculum Vitae: </label></td>
-            <td><input type="file" id="upload" name="pc-upload" required /></td>
-          </tr>
-          <tr>
-            <td><label for="experiencia">Última empresa em que trabalhou: </label></td>
-            <td><input type="text" id="experiencia" name="pc-experiencia" size="50" placeholder="Insira o nome da empresa aqui" value="" required /></td>
-          </tr>
-          <tr>
-            <td><label for="dataEntrada">Data de entrada: </label></td>
-            <td><input type="date" id="dataEntrada" name="pc-date" value="2023-10-01" required /></td>
-          </tr>
-          <tr>
-            <td><label for="dataSaida">Data de saida: </label></td>
-            <td><input type="date" id="dataSaida" name="pc-date" value="2023-10-01" required /></td>
-          </tr>
-          <tr>
-            <td><label>Quantos meses teve que dar a casa: </label></td>
-            <td>
-              <input type="radio" name="pc-meses" id="um" />
-              <label for="mesesCasa">1 mês</label>
-              <input type="radio" name="pc-meses" id="dois" />
-              <label for="mesesCasa">2 meses</label>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="coverLetter">Escreva sua Cover Letter: </label></td>
-            <td><textarea id="coverLetter" name="pc-coverLetter" rows="4" cols="50" placeholder="Escreva sua Cover Letter aqui"></textarea></td>
-          </tr>
-          <tr>
-            <td><label for="referencia">Onde ouviste falar de nós? </label></td>
-            <td>
-              <select id="referencia" name="pc-referencia">
-                <option value="Google">Site</option>
-                <option value="Conhecidos">Facebook</option>
-                <option value="Linkedin">Linkedin</option>
-                <option value="Facebook">Amigo</option>
-                <option value="Outro">Outro</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2"><input type="submit" value="Enviar candidatura" /></td>
-          </tr>
-        </tfoot>
-      </table>
-    </form>
-  </body>
+    th,
+    td {
+      padding: 8px 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-size: 24px;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="./Index.html">Ir para Indice</a>
+
+  <form method="post" action="">
+    <table>
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th>Input</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><label for="nome">Nome :</label></td>
+          <td><input type="text" id="nome" name="pc-nome" size="50" placeholder="Insira o nome aqui" value=""
+              required /></td>
+        </tr>
+        <tr>
+          <td><label for="sobrenome">Sobrenome :</label></td>
+          <td><input type="text" id="sobrenome" name="pc-apelido" size="50" placeholder="Insira seu sobrenome aqui"
+              value="" required /></td>
+        </tr>
+        <tr>
+          <td><label for="telefone">Telefone: </label></td>
+          <td><input type="tel" id="telefone" name="pc-telefone" placeholder="insira seu telefone" required /></td>
+        </tr>
+        <tr>
+          <td><label for="email">E-mail: </label></td>
+          <td><input type="email" id="email" name="pc-email" size="50" placeholder="Insira o email aqui" value=""
+              required /></td>
+        </tr>
+        <tr>
+          <td><label for="website">Website/Linkedin: </label></td>
+          <td><input type="url" id="website" name="pc-website" size="50" placeholder="Insira seu site" value="" /></td>
+        </tr>
+        <tr>
+          <td><label for="upload">Curriculum Vitae: </label></td>
+          <td><input type="file" id="upload" name="pc-upload" required /></td>
+        </tr>
+        <tr>
+          <td><label for="experiencia">Última empresa em que trabalhou: </label></td>
+          <td><input type="text" id="experiencia" name="pc-experiencia" size="50"
+              placeholder="Insira o nome da empresa aqui" value="" required /></td>
+        </tr>
+        <tr>
+          <td><label for="dataEntrada">Data de entrada: </label></td>
+          <td><input type="date" id="dataEntrada" name="pc-date" value="2023-10-01" required /></td>
+        </tr>
+        <tr>
+          <td><label for="dataSaida">Data de saida: </label></td>
+          <td><input type="date" id="dataSaida" name="pc-date" value="2023-10-01" required /></td>
+        </tr>
+        <tr>
+          <td><label>Quantos meses teve que dar a casa: </label></td>
+          <td>
+            <input type="radio" name="pc-meses" id="um" />
+            <label for="mesesCasa">1 mês</label>
+            <input type="radio" name="pc-meses" id="dois" />
+            <label for="mesesCasa">2 meses</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="coverLetter">Escreva sua Cover Letter: </label></td>
+          <td><textarea id="coverLetter" name="pc-coverLetter" rows="4" cols="50"
+              placeholder="Escreva sua Cover Letter aqui"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="referencia">Onde ouviste falar de nós? </label></td>
+          <td>
+            <select id="referencia" name="pc-referencia">
+              <option value="Google">Site</option>
+              <option value="Conhecidos">Facebook</option>
+              <option value="Linkedin">Linkedin</option>
+              <option value="Facebook">Amigo</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><input type="submit" value="Enviar candidatura" /></td>
+        </tr>
+      </tfoot>
+    </table>
+  </form>
+</body>
+
 </html>
